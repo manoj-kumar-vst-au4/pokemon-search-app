@@ -2,7 +2,7 @@ import React from 'react';
 
 const SearchFilter = ({ types, selectedType, setSelectedType, search, setSearch }) => {
   return (
-    <div className="flex flex-col md:flex-row gap-4 mb-6">
+    <div className="flex flex-col mb-6">
       <select
         className="border p-2 rounded w-full md:w-1/3"
         value={selectedType}
@@ -15,6 +15,7 @@ const SearchFilter = ({ types, selectedType, setSelectedType, search, setSearch 
           </option>
         ))}
       </select>
+      <br/>
       <input
         type="text"
         placeholder="Search Pokémon..."
